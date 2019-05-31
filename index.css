@@ -1,0 +1,58 @@
+body {
+  color: #EE9969;
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+  margin: 10px;
+}
+
+input:checked + label {
+  text-decoration: line-through;
+  color: #A2A56C
+}
+
+ul {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0;
+}
+
+#header {
+  background: linear-gradient(#F2B165, #EE9969);
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+
+h2 {
+  color: #EE9969;
+}
+
+.add {
+  background: linear-gradient(#F2B165, #EE9969);
+  color: white;
+  border-radius: 5px;
+}
+
+.invertedButton {
+  color: #EE9969;
+  border-radius: 5px;
+  border-color: #F2B165;
+}
+
+.removeButton {
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
+
+.visible {
+  display: block;
+}
+
+.not-visible {
+  display: none;
+}

@@ -1,0 +1,48 @@
+<html>
+
+<head>
+  <title>The best todo list</title>
+  <link rel="icon"
+    href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Checkmark_green.svg/1180px-Checkmark_green.svg.png">
+  <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="header">
+    <h1>Todo list</h1>
+  </div>
+  <div id="content">
+    <form onsubmit="handleOnSubmit(event)" id="form">
+      <label for="new-todo">Add todo</label>
+      <br />
+      <input id="new-todo" placeholder="Make bed">
+      <button class="add" type="button" onClick="handleOnSubmit(event)">Add</button>
+    </form>
+
+    <br />
+
+    <div class="allTodos">
+      <h2 class="title">My todos</h2>
+      <div>
+        <button class="invertedButton" onClick="handleState('all')" type="button">All</button>
+        <button class="invertedButton" onClick="handleState('active')" type="button">Active</button>
+        <button class="invertedButton" onClick="handleState('completed')" type="button">Completed</button>
+      </div>
+      <ul id="my-todos">
+        <li data-state="active">
+          <input onClick="handleTodoClick(event)" id="1" type="checkbox" value="1" />
+          <label for="1">Do laundry</label>
+          <button type="button" class="removeButton" onClick="handleRemove(event)">X</button>
+        </li>
+        <li data-state="active">
+          <input onClick="handleTodoClick(event)" id="2" type="checkbox" />
+          <label for="2">Buy milk</label>
+          <button type="button" class="removeButton" onClick="handleRemove(event)">X</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+<script src="./index.js"></script>
+
+</html>
